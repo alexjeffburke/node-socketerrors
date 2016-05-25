@@ -125,4 +125,12 @@ describe('SocketError', function () {
             expect(SocketError.supports(fakeSocketError), 'to be false');
         });
     });
+
+    it('should produce instances that have a falsy http property, despite being inherited from HttpError', function () {
+        expect(new SocketError.ECONNREFUSED().http, 'to be falsy');
+    });
+
+    it('should produce instances that have a falsy HttpError property, despite being inherited from HttpError', function () {
+        expect(new SocketError.ECONNREFUSED().HttpError, 'to be falsy');
+    });
 });
