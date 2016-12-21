@@ -34,7 +34,12 @@ describe('SocketError', function () {
         var err = new Error();
         var socketError = SocketError(err);
 
-        expect(socketError, 'to equal', new SocketError());
+        expect(socketError, 'to equal', new SocketError.NotSocketError());
+
+        expect(socketError.code, 'to equal', 'NotSocketError');
+
+        // has named errorCode property
+        expect(socketError.NotSocketError, 'to be true');
     });
 
     it('will not alter the original error', function () {
