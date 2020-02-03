@@ -6,9 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": {
-    "name": "Alex J Burke",
-    "email": "alex@alexjeffburke.com"
+  "author": "Alex J Burke <alex@alexjeffburke.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexjeffburke/node-socketerrors.git"
   },
   "license": "BSD",
   "dependencies": {
