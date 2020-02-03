@@ -4,7 +4,7 @@
   "description": "Maps socket errors to SocketError objects subclassing httperrors.",
   "main": "lib/SocketError.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . && prettier --check '**/*.js'",
     "test": "mocha"
   },
   "author": "Alex J Burke <alex@alexjeffburke.com>",
@@ -27,6 +27,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "mocha": "6.2.2",
+    "prettier": "~1.19.1",
     "unexpected": "10.40.2"
   }
 }
