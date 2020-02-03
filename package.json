@@ -7,6 +7,9 @@
     "lint": "eslint . && prettier --check '**/*.js'",
     "test": "mocha"
   },
+  "files": [
+    "lib"
+  ],
   "author": "Alex J Burke <alex@alexjeffburke.com>",
   "repository": {
     "type": "git",
