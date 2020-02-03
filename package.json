@@ -4,6 +4,7 @@
   "description": "Maps socket errors to SocketError objects subclassing httperrors.",
   "main": "lib/SocketError.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "mocha"
   },
   "author": "Alex J Burke <alex@alexjeffburke.com>",
@@ -17,7 +18,15 @@
     "httperrors": "2.0.1"
   },
   "devDependencies": {
-    "mocha": "2.4.5",
-    "unexpected": "10.8.2"
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-mocha": "^6.2.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "6.2.2",
+    "unexpected": "10.40.2"
   }
 }
